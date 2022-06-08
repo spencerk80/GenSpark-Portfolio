@@ -1,0 +1,14 @@
+footer {
+    background-color: #222;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-text {
+    margin-right: auto;
+}
+
+footer > a {
+    padding: 10px;
+}

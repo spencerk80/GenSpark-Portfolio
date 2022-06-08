@@ -1,0 +1,29 @@
+.main {
+    padding: 20px;
+    background-color: #333;
+    background-image: url('../../img/coding.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 90%;
+}
+
+.main--header {
+    display: flex;
+    flex-direction: row;
+}
+
+.main--textbox {
+    background-color: #333;
+    max-width: 900px;
+    padding: 0px 10px;
+}
+
+.main--header > h1 {
+    font-size: 80px;
+    margin-left: 200px;
+    text-decoration: underline;
+}
+
+.main > h2 {
+    font-size: 40px;
+}
