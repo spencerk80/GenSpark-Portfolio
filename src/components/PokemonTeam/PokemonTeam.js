@@ -1,14 +1,22 @@
+import React from 'react'
+
 import PokemonCard from '../PokemonCard/PokemonCard'
-import sampleData from '../../testdata'
+import getPokemon from '../../services/PokemonService'
 import './PokemonTeam.css'
 
-export default function PokemonTeam() {    
+let [pokeData, setPokeData] = [[], ()=>{}]
+
+export default function PokemonTeam() {  
+    
+    [pokeData, setPokeData] = React.useState([])
+
     return(
-        <main>
+        <main onLoad={buildCards}>
             <div className='team-list'>
                 {buildCards()}
             </div>
-            <button className='pokemon-btn' type='button'>
+            <button className='pokemon-btn' type='button' 
+                    onClick={() => setPokeData(getPokemon())}>
                 Get Team
             </button>
             <h2>
@@ -24,15 +32,13 @@ export default function PokemonTeam() {
 }
 
 function buildCards() {
-    let pokeData = sampleData
-    // let type2 = pokeData.types[1].type.name ? pokeData.types[0].type.name : ''
 
     pokeData = pokeData.map(poke =>
         <PokemonCard
-            key = {poke.id }
-            img = {poke.sprites.front_default}
-            name = {poke.name[0].toUpperCase() + poke.name.slice(1)}
-            type = {`${poke.types[0].type.name} ${poke.types[1] ? poke.types[1].type.name : ''}`}
+            key  = {poke.key}
+            img  = {poke.img}
+            name = {poke.name}
+            type = {poke.type}
         />
     )   
     return pokeData

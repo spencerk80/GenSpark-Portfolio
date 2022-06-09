@@ -23,12 +23,28 @@ p {
     padding: 10px;
 }
 
-.team-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-self: center;
-    margin:auto;
-    width: 70%;
-    height: 700px;
+@media(min-width: 900px) {
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-self: center;
+        margin:auto;
+        width: 70%;
+    }
+
+}
+
+@media(max-width: 900px) {
+
+    .team-list {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        margin:auto;
+        width: 70%;
+    }
+
 }
