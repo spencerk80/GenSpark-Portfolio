@@ -1,12 +1,12 @@
-import AboutMe from "./AboutMe/AboutMe"
 import NavBar from "./NavBar/NavBar"
 import Footer from "./Footer/Footer"
+import PokemonTeam from "./PokemonTeam/PokemonTeam"
 
 export default function App() {
     return (
         <div>
             <NavBar />
-            <AboutMe />
+            <PokemonTeam />
             <Footer />
         </div>
     )

@@ -8,6 +8,7 @@ export default function NavBar() {
             <h3 className='nav--icon-text text'>Kris' Portfolio</h3>
             <ul className='nav--links'>
                 <li>About Me</li>
+                <li>Example Page</li>
             </ul>
         </nav>
     )
