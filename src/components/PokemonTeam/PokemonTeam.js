@@ -37,7 +37,7 @@ export default function PokemonTeam() {
                 {buildCards(flipImg)}
             </div>
             <button className='pokemon-btn' type='button' 
-                    onClick={() => setPokeData(getPokemon())}>
+                    onClick={async () => setPokeData(await getPokemon())}>
                 Get Team
             </button>
             <h2>
