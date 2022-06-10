@@ -55,9 +55,11 @@ export default function PokemonTeam() {
 
 function buildCards(flipImg) {
 
+    let cardID = 0
+
     pokeData = pokeData.map(poke =>
         <PokemonCard
-            key         = {poke.id}
+            key         = {cardID++}
             id          = {poke.id}
             img         = {poke.useShinyImg ? poke.shinyImg : poke.frontImg}
             name        = {poke.name}
