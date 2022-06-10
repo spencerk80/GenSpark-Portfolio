@@ -8,6 +8,7 @@ let pokeData = [
         "past_types": [],
         "sprites": {
             "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png",
+            "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/470.png"
         },
         "types": [
             {
@@ -23,7 +24,8 @@ let pokeData = [
         "id": 700,
         "name": "sylveon",
         "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png"
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png",
+            "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/700.png"
             },
         "types": [
             {
@@ -39,7 +41,8 @@ let pokeData = [
         "id": 196,
         "name": "espeon",
         "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png"
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
+            "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/196.png"
         },
         "types": [
             {
@@ -55,7 +58,8 @@ let pokeData = [
         "id": 136,
         "name": "flareon",
         "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+            "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/136.png"
         },
         "types": [
             {
@@ -71,7 +75,8 @@ let pokeData = [
         "id": 134,
         "name": "vaporeon",
         "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+            "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/134.png"
         },
         "types": [
             {
@@ -87,7 +92,8 @@ let pokeData = [
         "id": 197,
         "name": "umbreon",
         "sprites": {
-            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png"
+            "front_default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
+            "front_shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/197.png"
         },
         "types": [
             {

@@ -1,6 +1,8 @@
 export default class Pokemon {
-    key = 0
-    name = ''
-    img = ''
-    type = ''
+    id              = 0
+    name            = ''
+    frontImg        = ''
+    shinyImg        = ''
+    useShinyImg     = false
+    type            = ''
 }
