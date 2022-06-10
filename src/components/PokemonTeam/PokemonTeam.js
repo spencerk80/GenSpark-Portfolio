@@ -10,26 +10,12 @@ export default function PokemonTeam() {
     
     [pokeData, setPokeData] = React.useState([])
 
-    function flipImg(id) {
-        setPokeData((prevPokeData) => {
-
-            let newPokeData = []
-
-            for(let poke of prevPokeData)
-
-                if(poke.id !== id)
-
-                    newPokeData.push(poke)
-
-                else {
-                    poke.useShinyImg = !poke.useShinyImg
-                    newPokeData.push(poke)
-                }
-
-                return newPokeData
-            
-        })
-    }
+        function flipImg(id) {
+            setPokeData(prevPokeData => 
+                prevPokeData.map(poke => 
+                    poke.id === id ? {...poke, useShinyImg : !poke.useShinyImg} : poke
+                ))
+        }
 
     return(
         <main onLoad={buildCards}>
