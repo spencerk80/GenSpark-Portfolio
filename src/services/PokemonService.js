@@ -19,7 +19,7 @@ export default async function getPokemon() {
         pokemon.name        = rawPokemonData.name[0].toUpperCase() + rawPokemonData.name.slice(1)
         pokemon.frontImg    = rawPokemonData.sprites.front_default
         pokemon.shinyImg    = rawPokemonData.sprites.front_shiny
-        pokemon.type        = `${type1} ${type2 ? ` / ${type2}` : ''}`
+        pokemon.type        = `${type1} ${type2 && ` / ${type2}`}`
         team.push(pokemon)
     })
 
