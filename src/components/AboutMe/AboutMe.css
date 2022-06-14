@@ -21,6 +21,11 @@
 .main--textbox {
     max-width: 900px;
     padding: 0px 10px;
+    
+}
+
+.main--textbox > p {
+    text-align: left;
 }
 
 .main--header > h1 {
