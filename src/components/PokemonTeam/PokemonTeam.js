@@ -63,6 +63,7 @@ function buildCards(flipImg) {
             key         = {cardID++}
             id          = {poke.id}
             img         = {poke.useShinyImg ? poke.shinyImg : poke.frontImg}
+            useShinyImg = {poke.useShinyImg}
             name        = {poke.name}
             type        = {poke.type}
             updateImg   = {flipImg}
