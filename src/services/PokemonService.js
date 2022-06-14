@@ -5,14 +5,21 @@ export default async function getPokemon() {
     const rawData = await getPokemonData()
     const team = []
 
+    //Type2 may not exist. Most pokemon don't have a secondary typing. Hence the ternarys
     rawData.forEach(rawPokemonData => {
         let pokemon = new Pokemon()
+        let type1 = rawPokemonData.types[0].type.name
+        let type2 = rawPokemonData.types[1] ? rawPokemonData.types[1].type.name : ''
+
+        //Capitalize the first letter of the types
+        type1 = type1[0].toUpperCase() + type1.slice(1)
+        if(type2) type2 = type2[0].toUpperCase() + type2.slice(1)
 
         pokemon.id          = rawPokemonData.id
         pokemon.name        = rawPokemonData.name[0].toUpperCase() + rawPokemonData.name.slice(1)
         pokemon.frontImg    = rawPokemonData.sprites.front_default
         pokemon.shinyImg    = rawPokemonData.sprites.front_shiny
-        pokemon.type        = `${rawPokemonData.types[0].type.name} ${rawPokemonData.types[1] ? rawPokemonData.types[1].type.name : ''}`
+        pokemon.type        = `${type1} ${type2 ? ` / ${type2}` : ''}`
         team.push(pokemon)
     })
 
