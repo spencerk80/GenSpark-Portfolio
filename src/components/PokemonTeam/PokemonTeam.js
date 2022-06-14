@@ -10,6 +10,7 @@ export default function PokemonTeam() {
     
     [pokeData, setPokeData] = React.useState([])
 
+        //Find which pokemon was clicked and flip the useShinyImg bool
         function flipImg(id) {
             setPokeData(prevPokeData => 
                 prevPokeData.map(poke => 
@@ -17,13 +18,27 @@ export default function PokemonTeam() {
                 ))
         }
 
+        //Get a new team. Disable the button during fetch and re-enable after
+        async function getNewTeam() {
+            const btn = document.getElementById('poke-btn')
+
+            btn.disabled = true
+            btn.innerText = 'Loading...'
+            setPokeData(await getPokemon())
+            btn.innerText = 'Get Team'
+            btn.disabled = false
+        }
+
     return(
         <main onLoad={buildCards}>
             <div className='team-list'>
                 {buildCards(flipImg)}
             </div>
-            <button className='pokemon-btn' type='button' 
-                    onClick={async () => setPokeData(await getPokemon())}>
+            <button 
+                className='pokemon-btn' 
+                id='poke-btn'
+                type='button' 
+                onClick={getNewTeam}>
                 Get Team
             </button>
             <h2>
