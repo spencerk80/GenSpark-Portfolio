@@ -48,7 +48,7 @@ export default function PokemonTeam() {
                 This page is an example usage of calling an external API and using React to
                 display the data returned. Simply click the button above and React will call
                 the API for 6 random Pokémon and display them.<br/>
-                <strong>You can also click on the image of any pokemon to change whether it's normal or shiny!</strong>
+                <strong>You can also click on the slider in the image of any pokemon to change whether it's normal or shiny!</strong>
             </p>
         </main>
     )
