@@ -1,5 +1,4 @@
 import './PokemonCard.css'
-import click_icon from '../../img/click.png'
 
 export default function PokemonCard(props) {
     return (

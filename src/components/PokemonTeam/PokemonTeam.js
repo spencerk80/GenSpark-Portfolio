@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 import PokemonCard from '../PokemonCard/PokemonCard'
 import getPokemon from '../../services/PokemonService'
@@ -9,6 +10,7 @@ let [pokeData, setPokeData] = [[], ()=>{}]
 export default function PokemonTeam() {  
     
     [pokeData, setPokeData] = React.useState([])
+    const {t} = useTranslation()
 
         //Find which pokemon was clicked and flip the useShinyImg bool
         function flipImg(id) {
@@ -23,9 +25,9 @@ export default function PokemonTeam() {
             const btn = document.getElementById('poke-btn')
 
             btn.disabled = true
-            btn.innerText = 'Loading...'
+            btn.innerText = t('example-button-loading')
             setPokeData(await getPokemon())
-            btn.innerText = 'Get Team'
+            btn.innerText = t('example-button-get')
             btn.disabled = false
         }
 
@@ -39,16 +41,14 @@ export default function PokemonTeam() {
                 id='poke-btn'
                 type='button' 
                 onClick={getNewTeam}>
-                Get Team
+                {t('example-button-get')}
             </button>
             <h2>
-                Note:
+                {t('example-note-header')}
             </h2>
             <p>
-                This page is an example usage of calling an external API and using React to
-                display the data returned. Simply click the button above and React will call
-                the API for 6 random Pokémon and display them.<br/>
-                <strong>You can also click on the slider in the image of any pokemon to change whether it's normal or shiny!</strong>
+                {t('example-note')}<br/>
+                <strong>{t('example-note-strong')}</strong>
             </p>
         </main>
     )

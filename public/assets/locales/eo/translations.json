@@ -1,0 +1,19 @@
+{
+    "nav-title": "La Aktujo de Kris",
+    "nav-about-me": "Pri Mi",
+    "nav-example": "Ekzemplo Paĝo",
+
+    "about-title": "Pri Mi",
+    "about-prof-exp": "Profesia Sperto",
+    "about-prof-exp-text": "Mi diplomiĝis de Southern Oregon University. Mi estas bakalaŭro de la scienco de komputiloj. Mi kompletigis la programon de Revature, de kiu, ili sendis min al Cognizant por labori kiel inĝinero de serva fidindeco.",
+    "about-prof-exp-text2": "Ekde mi malkovris programaran inĝenieradon en mezlernejo, mi sciis, ke tio estas, kion mi volis fari. Do, mi sentis min, ke SRE-laboro ne estas la prava kariera vojo por mi. Nun mi laboras ĉe GenSpark kun la celo fariĝi inĝeniero de la \"Java full stack\".",
+    "about-lang-list-header": "Iom da miaj plej ŝatataj lingvoj, kun kiuj mi laboras:",
+    "about-interests-header": "Interesoj",
+    "about-interests": "Mi ŝategas vulpojn! Ili estas mia plej ŝatata besto, de ĉi tie la bildeto en la angulo de ĉi tiu retpaĝo. Mi estas lingvisto per ŝatokupo. Mia fianĉo kaj mi kune studas esperanton. Se vi parolas Esperanton, bonvolu veni kaj diru \"saluton\"!",
+
+    "example-button-get": "Atingi Teamo",
+    "example-button-loading": "elŝutas...",
+    "example-note-header": "Noto:",
+    "example-note": "Ĉi tiu retpaĝo estas ekzemplo de la uzo de voki eksteran API-on kaj uzi React-on por paradi la datumojn resenditajn. Simple alklaku la butonon super ĉi tiu texto kaj React vokos la API-on por 6 ajnaj Pokemonoj kaj parados ilin.",
+    "example-note-strong": "Vi ankaŭ povas alklaki la ŝaltilon en la bildo de iu ajn pokemono por ŝanĝi ĉu ĝi estas normala aŭ \"shiny\""
+}

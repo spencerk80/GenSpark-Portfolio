@@ -26,3 +26,48 @@
 .nav-link:hover {
     background-color: #444;
 }
+
+.lng-btn {
+    background-image: url(../../img/globe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 80px;
+}
+
+.lng-menu {
+    position: absolute;
+    top: 140px;
+    right: 0px;
+    text-decoration: none;
+}
+
+.lang-option {
+    display: flex;
+    border: 1px solid black;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.lang-option:hover {
+    background-color: #444;
+}
+
+.flag-text {
+    margin-left: 10px;
+}
+
+.us-flag{
+    background-image: url("../../img/usa-flag.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
+
+.eo-flag{
+    background-image: url("../../img/eo-flag.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
